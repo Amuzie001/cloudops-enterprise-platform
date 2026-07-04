@@ -1,102 +1,139 @@
 # ☁️ CloudOps Enterprise Platform
 
 ![Status](https://img.shields.io/badge/Status-In%20Progress-blue)
-![Platform](https://img.shields.io/badge/Platform-AWS%20%7C%20Azure-orange)
+![Cloud](https://img.shields.io/badge/Cloud-AWS%20%7C%20Azure-orange)
 ![IaC](https://img.shields.io/badge/IaC-Terraform-623CE4)
-![Container](https://img.shields.io/badge/Container-Docker-2496ED)
+![Docker](https://img.shields.io/badge/Containers-Docker-2496ED)
+![CI/CD](https://img.shields.io/badge/CI/CD-GitHub%20Actions-success)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-## Project Overview
+## Overview
 
-CloudOps Enterprise Platform is a production-style DevOps portfolio built from scratch to demonstrate real-world cloud engineering practices using AWS, Azure, Terraform, Docker, GitHub Actions, Traefik, Prometheus, Grafana, Python, and Infrastructure as Code (IaC).
+**CloudOps Enterprise Platform** is a production-style DevOps portfolio that demonstrates the design, automation, deployment, monitoring, and operation of modern cloud infrastructure using Infrastructure as Code (IaC), containerization, CI/CD, observability, and security best practices.
 
-The goal of this project is to simulate how modern engineering teams design, automate, deploy, monitor, and secure cloud infrastructure in production environments.
+This platform is being developed through a structured **12-Day CloudOps Challenge**, where each milestone contributes to a production-ready cloud environment while documenting engineering decisions, implementation strategies, and lessons learned.
 
-# Objectives
-
-- Provision cloud infrastructure using Terraform
-- Automate deployments with GitHub Actions
-- Containerize applications with Docker
-- Configure reverse proxy using Traefik
-- Implement Infrastructure as Code (IaC)
-- Build monitoring dashboards with Prometheus & Grafana
-- Centralize application logging using Loki
-- Apply DevOps security best practices
-- Document every stage of the engineering journey
-
-# Technology Stack
+## Technology Stack
 
 | Category | Technologies |
-|-----------|--------------|
-| Cloud | AWS, Azure |
-| IaC | Terraform |
+|----------|--------------|
+| Platform | Ubuntu 24.04 LTS (WSL2) |
+| Cloud | AWS, Microsoft Azure |
+| Infrastructure as Code | Terraform |
 | Containers | Docker, Docker Compose |
 | CI/CD | GitHub Actions |
 | Reverse Proxy | Traefik |
 | Monitoring | Prometheus, Grafana |
 | Logging | Loki |
-| Automation | Bash, Python |
-| Version Control | Git & GitHub |
-| Operating System | Ubuntu 24.04 LTS (WSL2) |
+| Automation | Python, Bash |
+| Version Control | Git, GitHub |
 
-# Repository Structure
+## Engineering Principles
 
-cloudops-enterprise-platform
+This project is guided by industry-standard engineering practices:
+
+- Infrastructure as Code
+- Automation First
+- Security by Design
+- Observability by Default
+- Verification Over Assumption
+- Documentation as Code
+
+## Repository Structure
+
+cloudops-enterprise-platform/
+│
+├── 01-github/                 # Git & GitHub workflow
+├── 02-terraform/              # Infrastructure as Code
+├── 03-azure/                  # Azure deployments
+├── 04-ansible/                # Configuration management
+├── 05-docker/                 # Containerization
+├── 06-traefik/                # Reverse proxy
+├── 07-cicd/                   # CI/CD pipelines
+├── 08-monitoring/             # Monitoring & observability
+├── 09-logging/                # Centralized logging
+├── 10-backup/                 # Backup & disaster recovery
+├── 11-security/               # DevSecOps practices
+├── 12-portfolio/              # Production deployment
 │
 ├── docs/
-├── notes/
-├── screenshots/
-├── scripts/
-├── resources/
+│   ├── architecture/          # Solution architecture
+│   ├── diagrams/              # Technical diagrams
+│   ├── handbook/              # Daily engineering handbook
+│   └── interview-notes/       # Interview preparation
 │
-├── 01-github/
-├── 02-terraform/
-├── 03-azure/
-├── 04-ansible/
-├── 05-docker/
-├── 06-traefik/
-├── 07-cicd/
-├── 08-monitoring/
-├── 09-logging/
-├── 10-backup/
-├── 11-security/
-└── 12-portfolio/
+├── resources/
+│   └── verify-tools.sh        # Workstation verification
+│
+├── screenshots/
+│   └── day01/                 # Project evidence
+│
+├── scripts/                   # Automation scripts
+│
+├── CHANGELOG.md
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── LICENSE
+└── README.md
 
-# Bootcamp Progress
+## Implementation Roadmap
 
-| Day | Topic | Status |
-|------|-------|--------|
-| Day 1 | DevOps Engineering Workstation | ✅ Completed |
-| Day 2 | Professional Git Workflow | 🚧 In Progress |
-| Day 3 | Terraform Fundamentals | ⏳ Pending |
-| Day 4 | AWS Infrastructure | ⏳ Pending |
-| Day 5 | Azure Infrastructure | ⏳ Pending |
-| Day 6 | Docker & Containers | ⏳ Pending |
-| Day 7 | GitHub Actions CI/CD | ⏳ Pending |
-| Day 8 | Monitoring | ⏳ Pending |
-| Day 9 | Logging | ⏳ Pending |
-| Day 10 | Backup & Disaster Recovery | ⏳ Pending |
-| Day 11 | Security Hardening | ⏳ Pending |
-| Day 12 | Production Deployment | ⏳ Pending |
+| Day | Milestone | Status |
+|:---:|------------------------------|:------:|
+| 01 | DevOps Engineering Workstation | ✅ |
+| 02 | Git & GitHub Workflow | 🚧 |
+| 03 | Terraform Fundamentals | ⏳ |
+| 04 | Azure Infrastructure | ⏳ |
+| 05 | Docker & Containerization | ⏳ |
+| 06 | Traefik Reverse Proxy | ⏳ |
+| 07 | CI/CD with GitHub Actions | ⏳ |
+| 08 | Monitoring & Observability | ⏳ |
+| 09 | Centralized Logging | ⏳ |
+| 10 | Backup & Disaster Recovery | ⏳ |
+| 11 | DevSecOps | ⏳ |
+| 12 | Production Deployment | ⏳ |
 
-# Architecture
+## Core Competencies
 
-The high-level architecture for this project is available in:
+This project demonstrates practical experience in:
 
-docs/architecture/
+- Infrastructure as Code (Terraform)
+- Cloud Engineering (AWS & Azure)
+- Linux System Administration
+- Git & GitHub Workflow
+- Docker & Containerization
+- CI/CD Automation
+- Monitoring & Observability
+- Centralized Logging
+- DevSecOps Fundamentals
+- Bash & Python Automation
+- Technical Documentation
+- Troubleshooting & Root Cause Analysis
 
-# Learning Philosophy
+## Current Progress
 
-This repository documents my transition from Technical Support Engineer to DevOps Engineer by building production-style cloud infrastructure while documenting every lesson, challenge, and solution along the way.
+- ✅ Engineering workstation provisioned
+- ✅ Professional Git & GitHub workflow established
+- ✅ Repository standardized with engineering documentation
+- 🚧 Terraform implementation in progress
 
-# Author
+## Documentation
+
+| Directory | Description |
+|-----------|-------------|
+| `docs/architecture/` | Solution architecture |
+| `docs/diagrams/` | Technical diagrams |
+| `docs/handbook/` | Daily engineering handbook |
+| `docs/interview-notes/` | Interview preparation |
+
+## License
+
+This project is licensed under the **MIT License**.
+
+## Author
 
 **Amuzie Ebeyi**
 
-Technical Support Engineer → DevOps Engineer
+*Technical Support Engineer → DevOps Engineer*
 
-- GitHub: https://github.com/Amuzie001
-- LinkedIn: *http://linkedin.com/in/amuzie-ebeyi*
-
-
-⭐ If you find this project helpful, feel free to star the repository.
+> Building the **CloudOps Enterprise Platform** to demonstrate practical expertise in cloud infrastructure, automation, Infrastructure as Code, and DevOps engineering.
