@@ -21,6 +21,8 @@ terraform.tfvars
 terraform.tfvars.json
 override.tf
 override.tf.json
+*_override.tf
+*_override.tf.json
 
 # ==========================
 # AWS
